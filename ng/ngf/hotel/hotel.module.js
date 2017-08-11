@@ -1,4 +1,4 @@
 (function(){
     "use strict";
-    angular.module("hotelModule", []);
+    angular.module("hotelModule", ['angularUtils.directives.dirPagination']);
 }());

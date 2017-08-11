@@ -33,7 +33,7 @@
   <script src="js/ocLazyLoad.js"></script>	
   <script src="js/angular-imagefit.js"></script>	
   <script src="js/angular-country-state.js"></script>	
-  <script src="js/angular-fx.min.js"></script>	
+  <script src="js/dirPagination.js"></script>
 
   <script src="node_modules/satellizer/dist/satellizer.js"></script>
 
@@ -57,6 +57,16 @@
   <script src="ngf/event_center/event_center.module.js"></script>
   <script src="ngf/event_center/event_center.component.js"></script>
   <script src="ngf/event_center/event_center_result.controller.js"></script>
+
+
+  <script src="ngf/event_planner/event_planner.module.js"></script>
+  <script src="ngf/event_planner/event_planner.component.js"></script>
+  <script src="ngf/event_planner/event_planner_result_controller.js"></script>
+
+
+  <script src="ngf/vendor/vendor.module.js"></script>
+  <script src="ngf/vendor/vendor.component.js"></script>
+  <script src="ngf/vendor/vendor_result_controller.js"></script>
 
   <!--account-->
   <script src="ngf/account/account.module.js"></script>
@@ -251,7 +261,7 @@
 </head>	
 <body>
 
-<div class="menu" ng-class="{'show_menu':showMenu}">
+<div class="menu show_menu" ng-show="showMenu">
 <span class="md-padding" layout="row" layout-align="start end">
 	<span>
 		<a id="logo-container" ng-click="goto('home')" class="brand-logo left" style="margin-top:5px; ">

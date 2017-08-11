@@ -122,13 +122,9 @@
 		</div>
 	</md-card>
 
-	<ul>
-
-	</ul>
-
 	<md-content class="md-padding" layout-xs="column" layout="row">
 		<div flex="70" flex-gt-xs="100" flex-xs="100" flex-gt-md="70" flex-gt-sm="70" layout="column" >
-			<md-card class="kr-board" ng-repeat="board in board  | filter:rating:price |filter:myFunc"  class="hvr-forward md-whiteframe-2dp" >
+			<md-card class="kr-board" dir-paginate="board in board  | filter:rating:price |filter:myFunc | itemsPerPage: 3"  class="hvr-forward md-whiteframe-2dp" >
 				<md-card-title>
 					<md-card-title-text>
 						<div layout="row">
@@ -249,4 +245,5 @@
 
 		</md-card>
 	</md-content>
+	<div dir-pagination-controls></div>
 </div>

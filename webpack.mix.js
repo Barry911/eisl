@@ -27,6 +27,7 @@ const { mix } = require('laravel-mix');
         'public/js/ng/js/angular-ui-router-title.js',
         'public/js/ng/js/ocLazyLoad.js',
         'public/js/ng/js/angular-country-state.js',
+        'public/js/ng/js/dirPagination.js',
 
         'public/js/ng/app.module.js',
         'public/js/ng/mainCtrl.js',
@@ -42,6 +43,15 @@ const { mix } = require('laravel-mix');
 
         'public/ngf/event_center/event_center.module.js',
         'public/ngf/event_center/event_center.component.js',
+        'public/ngf/event_center/event_center_result.controller.js',
+
+        'public/ngf/event_planner/event_planner.module.js',
+        'public/ngf/event_planner/event_planner.component.js',
+        'public/ngf/event_planner/event_planner_result_controller.js',
+
+        'public/ngf/vendor/vendor.module.js',
+        'public/ngf/vendor/vendor.component.js',
+        'public/ngf/vendor/vendor_result_controller.js',
 
         'public/ngf/account/account.module.js',
         'public/ngf/account/account.config.js',
@@ -51,7 +61,7 @@ const { mix } = require('laravel-mix');
             'public/css/ng/css/index.css',
             'public/css/ng/css/angular-csp.css',
             'public/css/ng/css/animate.css',
-            'public/css/ng/css/hover.css',
+            'public/css/ng/css/magic.css',
             'public/css/ng/css/materialize.css',
             'public/css/ng/css/normalize.css'
         ],'public/css/all.css')

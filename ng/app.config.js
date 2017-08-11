@@ -74,6 +74,46 @@
             },
             template: '<event-center-result></event-center-result>'
         });
+        $stateProvider.state('event_planners', {
+            url: '/event_planners',
+            resolve: {
+                $title: function() {
+                    return 'Event Planners';
+                }
+            },
+           template: '<event_planner></event_planner>'
+
+        });
+        $stateProvider.state('event_planners_query', {
+            url: '/event_planner/search_result',
+            resolve: {
+                // Constant title
+                $title: function() { return 'Event Planner';
+
+                }
+            },
+            template: '<event-planner-result></event-planner-result>'
+        });
+        $stateProvider.state('vendor', {
+            url: '/vendor',
+            resolve: {
+                $title: function() {
+                    return 'Vendor';
+                }
+            },
+           template: '<vendor></vendor>'
+
+        });
+        $stateProvider.state('vendor_query', {
+            url: '/vendor/search_result',
+            resolve: {
+                // Constant title
+                $title: function() { return 'Vendor';
+
+                }
+            },
+            template: '<vendor-result></vendor-result>'
+        });
         $stateProvider.state('how_kittron_works', {
             url: '/how_kittron_works',
             resolve: {

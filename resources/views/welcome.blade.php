@@ -14,7 +14,7 @@
         <title ng-cloak ng-bind-template="$title"></title>
     </head>
     <body>
-    <div class="menu" ng-show="showMenu">
+    <div ng-cloak class="menu show_menu" ng-show="showMenu">
         <span class="md-padding" layout="row" layout-align="start end">
         <span>
 		<a id="logo-container" ng-click="goto('home')" class="brand-logo left" style="margin-top:5px; ">
@@ -45,17 +45,33 @@
 <md-divider></md-divider>
 <div>
 <md-content layout-align="center center">
-<md-list flex>
-	 <md-list-item class="md-2-line">
-	  <img ng-src="" class="md-avatar" alt="us" />
-	  <div class="md-list-item-text">
-	   <h3>who we</h3>
-	   <p>Secondary text</p> </div>
-	   </md-list-item>
-	     <md-list-item class="secondary-button-padding">
-    		<p>Clicking the button to the right will fire the secondary action</p>
-   		 <md-button class="md-secondary">More Info</md-button>
-  		</md-list-item>
+<md-list>
+<md-subheader>Services</md-subheader>
+  <md-list-item ng-click="goto('hotel')">
+    <div class="md-list-item-text">
+      <h3>Hotels</h3>
+    </div>
+  </md-list-item>
+  <md-list-item ng-click="goto('event_center')">
+    <div class="md-list-item-text">
+      <h3>Event Centers</h3>
+    </div>
+  </md-list-item>
+  <md-list-item ng-click="goto('event_planners')">
+    <div class="md-list-item-text">
+      <h3>Event Planners</h3>
+    </div>
+  </md-list-item>
+  <md-list-item ng-click="goto('vendor')">
+    <div class="md-list-item-text">
+      <h3>Vendors</h3>
+    </div>
+  </md-list-item>
+  <md-list-item ng-click="goto('vendor')">
+    <div class="md-list-item-text">
+      <h3>Tickets</h3>
+    </div>
+  </md-list-item>
 </md-list>
 </md-content>
 </div>
